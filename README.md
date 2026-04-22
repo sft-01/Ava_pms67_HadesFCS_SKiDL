@@ -25,6 +25,7 @@ Each board has its own set of files:
 
 ### Boards included
 
+- **Hades** — Main Flight Control System board (195 components, 316 nets)
 - **HadesGPSDongle** — GPS dongle board (27 components, 27 nets)
 - **HadesMicro** — Micro flight controller board (87 components, 161 nets)
 - **HadesMicroJLCPCB** — JLCPCB-optimized variant of HadesMicro (84 components, 175 nets)
@@ -43,6 +44,7 @@ pip install skidl
 ### Generate a netlist
 
 ```bash
+python3 hades_skidl.py                 # outputs hades_skidl.net
 python3 HadesGPSDongle_skidl.py        # outputs HadesGPSDongle_skidl.net
 python3 HadesMicro_skidl.py            # outputs HadesMicro_skidl.net
 python3 HadesMicroJLCPCB_skidl.py      # outputs HadesMicroJLCPCB_skidl.net
